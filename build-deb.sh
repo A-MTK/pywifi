@@ -1,9 +1,6 @@
 CONTAINER_NAME="pywifi-build-env"
 OUT_FOLDER="./dist"
 
-#Build environment first
-docker build -t pywifi-build-env .
-
 #Remove the container if exist (might not be deleted last time)
 docker rm -f $CONTAINER_NAME
 
